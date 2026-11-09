@@ -113,43 +113,42 @@ header img {
 }
 
 nav { 
+  background: #333; 
+  padding: 0.5rem; 
+}
+nav ul { 
+  list-style: none; 
+}
+nav .menu { 
   display: flex; 
   justify-content: center; 
   gap: 0.5rem; 
-  background: rgba(0,0,0,1); 
-  padding: 0.5rem; 
 }
-nav details { 
+nav .menu > li {
   position: relative; 
 }
-nav summary { 
-  list-style: none; 
-  cursor: pointer; 
+nav a { 
+  display: block; 
   color: #fff; 
+  text-decoration: none;
   padding: 0.5rem 1rem; 
 }
-nav summary::-webkit-details-marker { 
-  display: none; 
-}
-nav summary:hover, nav details[open] summary { 
+nav .menu > li:hover > a { 
   background: #555; 
 }
-nav ul { 
+nav .menu ul { 
+  display: none; 
   position: absolute; 
   top: 100%; 
   left: 0; 
   min-width: 160px; 
   background: #444; 
-  list-style: none; 
   z-index: 1; 
-}     
-nav ul a { 
+}  
+nav .menu > li:hover > ul {
   display: block; 
-  color: #fff; 
-  text-decoration: none; 
-  padding: 0.5rem 1rem; 
 }
-nav ul a:hover { 
+nav .menu ul a:hover { 
   background: #666; 
 }
 
