@@ -33,8 +33,7 @@ nav .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 1.5r
 nav .menu > li { position: relative; }
 nav a { display: block; padding: 0.5rem 1rem; font-size: 1.5rem; }
 nav .menu > li > a.active { border-bottom: 2px solid var(--yellow); }
-nav .menu ul { display: none; position: absolute; top: 100%; left: 0; min-width: 180px; background: #fff; text-align:    
-left; z-index: 1; }
+nav .menu ul { display: none; position: absolute; top: 100%; left: 0; min-width: 180px; background: #fff; text-align: left; z-index: 1; }
 nav .menu > li:hover > ul { display: block; }
 nav .menu ul a { padding: 0.25rem 1rem; }
 nav .menu ul a:hover { text-decoration: underline; }
@@ -44,8 +43,7 @@ nav .menu > li > a::after {
   content: "";
   position: absolute; left: 1rem; right: 1rem; bottom: 0;
   height: 10px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'%3E%3Cpath d='M0 5 Q5 
-0 10 5 T20 5' fill='none' stroke='%23fbc75a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'%3E%3Cpath d='M0 5 Q5 0 10 5 T20 5' fill='none' stroke='%23fbc75a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
   background-size: 20px 10px;
   clip-path: inset(0 100% 0 0);
   transition: clip-path 0.3s ease;
@@ -68,8 +66,7 @@ main { flex: 1; width: 100%; max-width: 1300px; margin: 0 auto; padding: 3rem 1.
 .frame { border: 14px solid var(--orange); border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%; overflow: hidden; }
 .frame img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 
-.btn { display: inline-block; padding: 0.6rem 1.8rem; border: 3px solid var(--yellow); border-radius: 999px; font-family:
-'Fredoka', sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+.btn { display: inline-block; padding: 0.6rem 1.8rem; border: 3px solid var(--yellow); border-radius: 999px; font-family:'Fredoka', sans-serif; letter-spacing: 1px; text-transform: uppercase; }
 .btn:hover, .btn.solid { background: var(--yellow); color: #fff; }
 .btn-row { display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
 
