@@ -93,7 +93,7 @@ footer {
 footer .icons { display: flex; justify-content: center; gap: 1rem; }
 footer .icons img { height: 3rem; filter: invert(1); }
 
-.heart { background: none; border: 0; padding: 0; color: #fff; font: inherit; cursor: pointer; }
+.heart { background: none; border: 0; padding: 0; color: #fff; font: inherit; cursor: pointer; display: inline-block; transition: transform 0.15s ease; }
 .heart:active { transform: scale(1.3); }
 
 .burst {
