@@ -5,6 +5,8 @@
 :root {
   --yellow: #fbc75a;
   --orange: #f2794b;
+  --red: #f77342;
+  --blue: #3fb9d8;
   --ink: #111;
 }
 
@@ -32,7 +34,7 @@ nav ul { list-style: none; margin: 0; padding: 0; }
 nav .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 1.5rem; }
 nav .menu > li { position: relative; }
 nav a { display: block; padding: 0.5rem 1rem; font-size: 1.5rem; }
-nav .menu > li > a.active { border-bottom: 2px solid var(--yellow); }
+nav .menu > li > a.active { border-bottom: 2px solid var(--red); }
 nav .menu ul { display: none; position: absolute; top: 100%; left: 0; min-width: 180px; background: #fff; text-align: left; z-index: 1; }
 nav .menu > li:hover > ul { display: block; }
 nav .menu ul a { padding: 0.25rem 1rem; }
@@ -84,11 +86,11 @@ form button { margin-top: 1rem; border: 0; cursor: pointer; }
 /* Footer */
 footer {
   background: var(--yellow); color: #fff; text-align: center;
-  min-height: min(360px, 40vh);
+  min-height: min(320px, 32vh);
   display: flex; flex-direction: column; justify-content: center; gap: 0.75rem;
   font-family: 'Fredoka', sans-serif; font-size: 1.4rem;
 }
-footer .icons { display: flex; justify-content: center; gap: 1.5rem; }
+footer .icons { display: flex; justify-content: center; gap: 1.5rem; color: #fff }
 footer .icons img { height: 32px; }
 
 @media (max-width: 768px) {
