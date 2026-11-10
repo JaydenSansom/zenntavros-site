@@ -44,7 +44,7 @@ nav .menu > li > a { position: relative; }
 nav .menu > li > a::after {
   content: "";
   position: absolute; left: 1rem; right: 1rem; bottom: 0.3rem; height: 10px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'%3E%3Cpath d='M0 5 Q5 0 10 5 T20 5' fill='none' stroke='%23fbc75a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 10'%3E%3Cpath d='M0 5 Q5 0 10 5 T20 5' fill='none' stroke='%23f77342' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
   background-size: 20px 10px;
   clip-path: inset(0 round 5px);
   transform: scaleX(0);
@@ -90,8 +90,8 @@ footer {
   display: flex; flex-direction: column; justify-content: center; gap: 0.75rem;
   font-family: 'Fredoka', sans-serif; font-size: 1.4rem;
 }
-footer .icons { display: flex; justify-content: center; gap: 1.5rem; color: #fff }
-footer .icons img { height: 32px; }
+footer .icons { display: flex; justify-content: center; gap: 1rem; }
+footer .icons img { height: 3rem; filter: invert(1); }
 
 @media (max-width: 768px) {
   .two-col { grid-template-columns: 1fr; }
