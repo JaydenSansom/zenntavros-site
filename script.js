@@ -11,6 +11,7 @@ document.querySelector('.heart').addEventListener('click', e => {
     const dist = 80 + Math.random() * 120;
     h.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
     h.style.setProperty('--dy', Math.sin(angle) * dist - 40 + 'px');
+    h.style.setProperty('--rot', (Math.random() - 0.5) * 360 + 'deg');
     document.body.appendChild(h);
     h.addEventListener('animationend', () => h.remove());
   }
