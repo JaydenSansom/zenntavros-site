@@ -63,6 +63,28 @@ nav .menu > li > a.active::after {
 /* Body */
 main { flex: 1; width: 100%; max-width: 1300px; margin: 0 auto; padding: 3rem 1.5rem; }
 
+.bubble-text {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 0;
+  max-width: 800px; margin: 3rem auto;
+}
+.bubble {
+  position: relative;
+  container-type: inline-size;
+}
+.bubble img { width: 100%; display: block; }
+.bubble p {
+  position: absolute; margin: 0;
+  inset: 18% 12% 28% 12%;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  font-size: 5cqw;
+  line-height: 1.3;
+  overflow: hidden;
+}
+.little-me { width: clamp(90px, 25%, 180px); margin-left: -8%; }
+
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem; }
 .grid-4 { margin-bottom: 4rem; }
 .grid-4 img { width: 100%; aspect-ratio: 1; object-fit: cover; }
