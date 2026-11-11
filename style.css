@@ -104,6 +104,8 @@ inherit; }
 form textarea { min-height: 120px; }
 form button { margin-top: 1rem; border: 0; cursor: pointer; }
 
+.form-status { margin-top: 1rem; font-size: 1.3rem; }
+
 .divider {
   width: 85%; height: 24px; margin: 3rem auto;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 14'%3E%3Cpath d='M0 7 Q6 1 12 7 T24 7' fill='none' stroke='%23f77342' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x center;    
