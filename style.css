@@ -84,9 +84,11 @@ form textarea { min-height: 120px; }
 form button { margin-top: 1rem; border: 0; cursor: pointer; }
 
 .divider {
-  display: block; width: 66%; height: 14px; margin: 3rem auto;
-  fill: none; stroke: var(--red); stroke-width: 4; stroke-linecap: round;
-  overflow: visible;
+  width: 66%; height: 14px; margin: 3rem auto;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 14'%3E%3Cpath d='M0 7 Q6 1 12 7 T24 7' fill='none' stroke='%23fbc75a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x center;    
+  background-size: 24px 14px;
+  mask: radial-gradient(circle at left center, transparent 2px, #000 3px) left / 50% 100% no-repeat,
+        radial-gradient(circle at right center, transparent 2px, #000 3px) right / 50% 100% no-repeat;
 }
 
 /* Footer */
