@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -10,10 +10,17 @@
   --ink: #111;
 }
 
+@font-face {
+  font-family: 'MyFunkyFont';
+  src: url('Myfunkyfont-Regular.ttf' format('ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   display: flex; flex-direction: column; min-height: 100vh;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'MyFunkyFont';
   font-size: 1.35rem; line-height: 1.6;
   color: var(--ink); background: #fff;
 }
@@ -21,7 +28,7 @@ body {
 h1, h2, h3 { font-family: 'Fredoka', sans-serif; line-height: 1.1; margin: 0 0 1rem; }
 h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); color: var(--yellow); text-transform: uppercase; }
 h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--yellow); text-transform: uppercase; }
-h3 { font-family: 'Patrick Hand', cursive; font-size: 2rem; }
+h3 { font-family: 'MyFunkyFont'; font-size: 2rem; }
 p { margin: 0 0 1rem; }
 a { color: var(--yellow); text-decoration: none; }
 img, video, iframe { max-width: 100%; height: auto; display: block; }
