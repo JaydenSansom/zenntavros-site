@@ -1,3 +1,23 @@
+const form = document.getElementById('contact');
+form?.addEventListener('submit', async e => {
+  e.preventDefault();
+  const status = form.querySelector('.form-status');
+  const btn = form.querySelector('button');
+  btn.disabled = true;
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    });
+    if (!res.ok) throw new Error();
+    form.innerHTML = '<p class="form-status">Thanks! Your message is on its way. &hearts;</p>';
+  } catch {
+    status.textContent = 'Something went wrong. Try again or email me directly!';
+    btn.disabled = false;
+  }
+});
+
 document.querySelector('.heart').addEventListener('click', e => {
   const r = e.target.getBoundingClientRect();
   const count = 3 + Math.floor(Math.random() * 3);
