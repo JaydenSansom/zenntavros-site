@@ -83,6 +83,12 @@ inherit; }
 form textarea { min-height: 120px; }
 form button { margin-top: 1rem; border: 0; cursor: pointer; }
 
+.divider {
+  display: block; width: 66%; height: 14px; margin: 3rem auto;
+  fill: none; stroke: var(--red); stroke-width: 4; stroke-linecap: round;
+  overflow: visible;
+}
+
 /* Footer */
 footer {
   background: var(--yellow); color: #fff; text-align: center;
