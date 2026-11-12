@@ -1,0 +1,68 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zenntavros</title>
+  <link rel="icon" type="image/png" href="/images/tab-icon.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+  
+<body>
+  <header>
+    <a href="/"><img class="logo" src="/images/mainwave.gif" alt="zenntavros"></a>
+    <nav>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="menu">
+        <li><a href="/about/">About</a></li>
+        <li><a>My Work</a>
+          <ul>
+            <li><a href="/tools/">Tools</a></li>
+            <li><a href="/games/">Games</a></li>
+            <li><a class="active" href="/art/">Art</a></li>
+          </ul>
+        </li>
+        <li><a>My Experiences</a>
+          <ul>
+            <li><a href="/epic-games/">Epic Games</a></li>
+            <li><a href="/playstation/">PlayStation</a></li>
+            <li><a href="/atomic-arcade/">Atomic Arcade</a></li>
+            <li><a href="/ncsu-libraries/">NCSU Libraries</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.etsy.com/shop/zenntavros">Shop</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Art!</h1>
+    <p>I love to draw and make super cute things! You can find me at local art markets and doing commissions online!</p>
+    <div class="mosaic">
+      {% assign imgs = site.static_files | where_exp: "f", "f.path contains '/images/art/'" | sort: "name" %}
+      {% for img in imgs %}
+        <img src="{{ img.path }}" alt="" loading="lazy">
+      {% endfor %}
+    </div>
+  </main>
+  
+  <footer>
+    <div class="icons">
+      <a href="https://instagram.com/zenntavros"><img src="/icons/instagram.svg" alt="Instagram"></a>
+      <a href="https://twitter.com/zenntavros"><img src="/icons/twitter.svg" alt="Twitter"></a>
+      <a href="https://linkedin.com/in/jaydensansom"><img src="/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="mailto:zentavros@gmail.com"><img src="/icons/mail.svg" alt="Email"></a>
+    </div>
+    <p>Made with <button class="heart" aria-label="heart">&#x2764;&#xFE0E;</button> by Jayden Sansom</p>
+  </footer>
+    
+<!-- Load additional JS scripts here -->
+<script type="text/javascript" src="/script.js"></script>  
+</body>
+</html>
