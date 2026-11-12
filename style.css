@@ -122,6 +122,7 @@ footer {
   min-height: min(320px, 32vh);
   display: flex; flex-direction: column; justify-content: center; gap: 0.75rem;
   font-family: 'Fredoka', sans-serif; font-size: 1.4rem;
+  padding: 1rem;
 }
 footer .icons { display: flex; justify-content: center; gap: 1rem; }
 footer .icons img { height: 3rem; filter: invert(1); }
