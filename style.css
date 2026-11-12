@@ -134,6 +134,7 @@ footer .icons img { height: 3rem; filter: invert(1); }
   100% { transform: translate(calc(-50% + var(--dx)), calc(-100% + var(--dy))) scale(0.6); opacity: 0; }
 }
 
+.feed { margin-bottom: 4rem; }
 .feed-mobile { display: none; }
 
 @media (max-width: 768px) {
