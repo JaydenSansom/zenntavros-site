@@ -134,8 +134,12 @@ footer .icons img { height: 3rem; filter: invert(1); }
   100% { transform: translate(calc(-50% + var(--dx)), calc(-100% + var(--dy))) scale(0.6); opacity: 0; }
 }
 
+.feed-mobile { display: none; }
+
 @media (max-width: 768px) {
   .two-col { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   body { font-size: 1.15rem; }
+  .feed-desktop { display: none; }
+  .feed-mobile { display: block; }
 }
