@@ -42,8 +42,11 @@
   </header>
 
   <main>
-    <h1>Art!</h1>
-    <p>I love to draw and make super cute things! You can find me at local art markets and doing commissions online!</p>
+    <h1 style="text-align: center; color: var(--red);">Art!</h1>
+    <p style="margin: 0 0 4rem;">I love to draw and make super cute things! You can find me at local art markets and doing commissions online!</p>
+
+    <div class="divider"></div>
+    
     <div class="mosaic">
       {% assign imgs = site.static_files | where_exp: "f", "f.path contains '/images/art/'" | sort: "name" %}
       {% for img in imgs %}
