@@ -24,7 +24,7 @@ document.querySelector('.heart').addEventListener('click', e => {
   for (let i = 0; i < count; i++) {
     const h = document.createElement('span');
     h.className = 'burst';
-    h.textContent = '\u2665';
+    h.textContent = '\u2764\uFE0E';
     h.style.left = r.left + r.width / 2 + (Math.random() - 0.5) * 20 + 'px';
     h.style.top = r.top + 'px';
     h.style.setProperty('--dx', (Math.random() - 0.5) * 60 + 'px');
