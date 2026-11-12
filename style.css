@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'MyFunkyFont';
-  src: url('Myfunkyfont-Regular.ttf' format('ttf');
+  src: url('/fonts/Myfunkyfont-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
 }
