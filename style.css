@@ -165,6 +165,7 @@ footer .icons img { height: 3rem; filter: invert(1); }
     display: block; position: static; min-width: 0; text-align: center;
     border-radius: 0; box-shadow: none; padding: 0;
   }
-  nav .menu ul a { font-size: 1.1rem; padding: 0.15rem 1rem; }
+  nav .menu ul a { color: var(--yellow); font-size: 1.1rem; padding: 0.15rem 1rem; }
+  nav .menu > li > a { color: var(--blue); }
   nav .menu > li > a::after { display: none; }
 }
